@@ -1,0 +1,256 @@
+body {
+    background-color: hsl(228, 33%, 97%);
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*----------------comment---------------- */
+.post {
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 680px;
+    border: 2px solid hsl(228, 33%, 97%);
+    border-radius: 10px;
+}
+.user-img {
+    height: 30px;
+    width: 30px
+}
+
+.upVote-btn {
+    display: flex;
+    flex-direction: column;
+    width: 25px;
+    height: 80px;
+    background-color: hsl(228, 33%, 97%);
+    border: 2px solid hsl(223, 19%, 93%);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 8px;
+}
+    .plus {
+        background-position: center;
+        height: 25px;
+        padding-left: 7px;
+        
+    }
+    .voteTotal {
+        color: hsl(238, 40%, 52%);
+        text-align: center;
+        font-weight: 500;
+        border-top: 1px solid hsl(223, 19%, 93%);
+        border-bottom: 1px solid hsl(223, 19%, 93%);
+        padding: 3px 0px;
+    }
+    .minus {
+        background-position: center;
+        background-color: hsl(228, 33%, 97%);
+        height: 25px;
+        padding-left: 7px;   
+    }
+
+.postAge{
+    color: hsl(211, 10%, 45%);
+    padding: 15px;
+    width: 300px;
+}
+
+.post-message {
+    color: hsl(211, 10%, 45%);
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 16px;
+    width: 600px;
+}
+
+.post-data {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.reply {
+    color: hsl(238, 40%, 52%);
+    font-weight: 500;
+    margin-left: 75px;   
+}
+
+.name {
+    padding: 15px;
+}
+
+
+/* -----------narrow comment-------------- */
+.post-narrow {
+    /* turn both margins into one line */
+    margin: 10px;
+    
+    border-radius: 10px;   
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 635px;
+}
+
+.narrow-postBody {
+    width: 520px;
+}
+
+
+.narrow-post-message {
+    color: hsl(211, 10%, 45%);
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 16px;
+    width: 520px;
+    
+}
+
+.post-data-narrow {
+    display: flex;
+    flex-direction: row;
+    width: 580px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.narrow-reply {
+    color: hsl(238, 40%, 52%);
+    font-weight: 500;
+    width: 150px;
+    text-align: right;
+    padding-right: 18px;
+}
+
+.edit {
+    color: hsl(238, 40%, 52%);
+    font-weight: 500;
+    width: 100px;
+    text-align: right;
+    padding-right: 18px;
+}
+
+.delete-btn {
+    color: hsl(358, 79%, 66%);
+    font-weight: 500;
+    width: 100px;
+    text-align: right;
+}
+
+.anchor {
+    text-decoration: none;
+    color: hsl(238, 40%, 52%);
+}
+
+.spacer {
+    background-color: hsl(228, 33%, 97%);
+     width: 30px;
+     margin-right: 5px;
+     border-right: 2px solid hsl(223, 19%, 93%);
+}
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.you {
+    color: white;
+    background-color: hsl(238, 40%, 52%);
+    text-align: center;
+    padding-bottom: 3px;
+    width:65px;
+    border-radius: 3px;
+}
+    
+
+/*--------------new comment--------------- */
+.newComment {
+    margin: 10px;
+    padding: 15px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 680px;
+    border: 2px solid hsl(228, 33%, 97%);
+    border-radius: 10px;
+}
+
+.user-larger-img {
+    height: 45px;
+    width: 45px
+}
+
+.add-comment {
+    color: hsl(211, 10%, 45%);
+    width: 500px;
+    height:70px;
+    border-radius: 9px;
+    border: 1px solid hsl(228, 33%, 97%);
+    padding: 15px;
+}
+
+.snd-btn {
+    background-color: hsl(238, 40%, 52%);
+    height: 35px;
+    width: 90px;
+    font-weight: 400;
+    font-size: 17px;
+    border-radius: 6px;
+    text-align: center;
+    color: white;
+    padding-top: 12px;
+}
+
+/* ----------button hover--------- */
+.reply:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.narrow-reply:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.plus:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.minus:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.snd-btn:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.edit:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+

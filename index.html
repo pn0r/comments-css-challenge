@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-
+  <link rel="stylesheet" href="./design/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <!-- Fonts from google -->
@@ -23,35 +23,135 @@
 <body>
 
   <!-- Comment #1 -->
-  12
-  <img src="./images/avatars/image-amyrobson.png" alt="profile" />
-  amyrobson 
-  1 month ago
-  Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.
+  <div class="post">
 
-  <!-- Comment #2 -->
-  5
-  <img src="./images/avatars/image-maxblagun.png" alt="profile" />
-  maxblagun 
-  2 weeks ago
-  Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
+    <div class="upVote-btn">
+      <div class="plus">
+        <img src="./images/icon-plus.svg" />
+      </div>
+      <div class="voteTotal">12</div>
+      <div class="minus">
+        <img src="./images/icon-minus.svg"/>
+      </div>
+    </div>
 
-  <!-- Comment #3 (Reply to comment #2) -->
-  4
-  <img src="./images/avatars/image-ramsesmiron.png" alt="profile" />
-  ramsesmiron 
-  1 week ago
-  @maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.
+    <div class="postBody">
+      <div class="post-data">
+        <img class="user-img"src="./images/avatars/image-amyrobson.png" alt="profile" />
+        <div class="name">amyrobson</div>
+        <div class="postAge">1 month ago</div>
+        <div class="reply">
+          <img src="./images/icon-reply.svg"  alt="profile" />
+          Reply
+        </div>
+      </div>
+      <div class="post-message">
+        Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.
+      </div>
+    </div>
+  </div>
+<!-- Comment #2 -->
+  <div class="post">
 
-  <!-- Comment #4 (Reply to comment #2) -->
-  2
-  <img src="./images/avatars/image-juliusomo.png" alt="profile" />
-  juliusomo 
-  2 days ago
-  @ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.
+    <div class="upVote-btn">
+      <div class="plus">
+        <img src="./images/icon-plus.svg" />
+      </div>
+      <div class="voteTotal">5</div>
+      <div class="minus">
+        <img src="./images/icon-minus.svg"/>
+      </div>
+    </div>
 
+    <div class="postBody">
+      <div class="post-data">
+        <img class="user-img" src="./images/avatars/image-maxblagun.png" alt="profile" />
+        <div class="name">maxblagun</div>
+        <div class="postAge">2 weeks ago</div>
+        <div class="reply">
+          <img src="./images/icon-reply.svg"  alt="profile" />
+          Reply
+        </div>
+      </div>
+      <div class="post-message">
+        Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
+      </div>
+    </div>
+  </div>
+<!-- Comment #3 (Reply to comment #2) -->
+<div class="row-container">
+  <div class="spacer"></div> 
+    <div class="post-narrow">
 
-  
+      <div class="upVote-btn">
+        <div class="plus">
+          <img src="./images/icon-plus.svg" />
+        </div>
+        <div class="voteTotal">4</div>
+        <div class="minus">
+          <img src="./images/icon-minus.svg"/>
+        </div>
+      </div>
+
+      <div class="narrow-postBody">
+        <div class="post-data-narrow">
+          <img class="user-img" src="./images/avatars/image-ramsesmiron.png" alt="profile" />
+          <div class="name">ramsesmiron</div>
+          <div class="postAge">1 week ago</div>
+          <div class="narrow-reply">
+            <img src="./images/icon-reply.svg"  alt="profile" />
+            Reply
+          </div>
+        </div>
+        <div class="narrow-post-message">
+          <a href="" class="anchor">@maxblagun</a> If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Comment #4 (Reply to comment #2) -->
+<div class="row-container">
+  <div class="spacer"></div> 
+  <div class="post-narrow">
+    <div class="upVote-btn">
+      <div class="plus">
+        <img src="./images/icon-plus.svg" />
+      </div>
+      <div class="voteTotal">2</div>
+      <div class="minus">
+        <img src="./images/icon-minus.svg"/>
+      </div>
+    </div>
+    
+    <div class="narrow-postBody">
+      <div class="post-data-narrow">
+        <img class="user-img" src="./images/avatars/image-juliusomo.png" alt="profile" />
+        <div class="name">juliusomo</div>
+        <div class="you">you</div>
+        <div class="postAge">2 days ago</div>
+        <div class="delete-btn">
+          <img src="./images/icon-delete.svg" alt="profile" />
+          Delete
+        </div>
+        <div class="edit">
+          <img src="./images/icon-edit.svg" alt="profile" />
+          Edit
+        </div>
+      </div>
+      <div class="narrow-post-message">
+        <a href="" class="anchor">@ramsesmiron</a> I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class ="newComment">
+    <img class="user-larger-img" src="./images/avatars/image-juliusomo.png" alt="profile" />
+    <div class="add-comment">Add a comment...</div>
+    <div class="snd-btn">SEND</div>
+  </div>
   <div class="attribution">
     Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
